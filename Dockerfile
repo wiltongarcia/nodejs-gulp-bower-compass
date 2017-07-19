@@ -9,7 +9,7 @@ RUN apk add --no-cache --virtual .build-deps build-base libffi-dev ruby ruby-dev
 
 WORKDIR /workspace    
 
-RUN cd /workspace
+RUN cd /workspace \
     && npm install gulp \ 
     && npm installl bower
 
