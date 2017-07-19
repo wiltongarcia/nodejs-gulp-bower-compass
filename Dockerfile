@@ -11,5 +11,5 @@ WORKDIR /workspace
 
 RUN cd /workspace \
     && npm install gulp \ 
-    && npm installl bower
+    && npm install bower
 
