@@ -7,7 +7,8 @@ RUN apk add --no-cache --virtual .build-deps build-base libffi-dev ruby ruby-dev
     && apk del build-base libffi-dev ruby-dev \
     && rm -rf /var/cache/* /tmp/* \
     && npm install gulp -g \ 
-    && npm install bower -g
+    && npm install bower -g \
+    && npm rebuild node-sass
 
 WORKDIR /workspace    
 
