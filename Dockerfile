@@ -12,4 +12,8 @@ RUN apk add --no-cache --virtual .build-deps build-base libffi-dev ruby ruby-dev
 
 WORKDIR /workspace    
 
+RUN npm install
+
+CMD ["gulp"]
+
 
